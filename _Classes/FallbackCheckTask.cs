@@ -49,7 +49,7 @@ namespace Verndale.SharedSource._Classes.Shared.Customizations.Customized_Glass
 
         // in the case of chained fallback, eg fr-CA -> en-CA -> en
         // could be that the middle languages don't have versions either, but DO have a fallback item
-        // therefore, msut check back further until either a version is found, or there are no more fallback items
+        // therefore, must check back further until either a version is found, or there are no more fallback items
         private Item CheckRecursivelyForFallbackItem(Item thisItem)
         {
             var fallBackItem = thisItem.GetFallbackItem();
